@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B1293A2E-3709-4269-B771-3315EC62FECA}</ProjectGuid>
+    <ProjectGuid>{8C5D6B72-CC71-4DB1-A20A-FF4C6272602B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>BlackJack_Server_Colombi</RootNamespace>
     <AssemblyName>BlackJack_Server_Colombi</AssemblyName>

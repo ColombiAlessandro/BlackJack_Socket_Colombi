@@ -6,3 +6,10 @@ C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\obj\Deb
 C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\obj\Debug\BlackJack_Client_Colombi.csproj.CoreCompileInputs.cache
 C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\obj\Debug\BlackJack_Client_Colombi.exe
 C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\obj\Debug\BlackJack_Client_Colombi.pdb
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\bin\Debug\BlackJack_Client_Colombi.exe.config
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\bin\Debug\BlackJack_Client_Colombi.exe
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\bin\Debug\BlackJack_Client_Colombi.pdb
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\obj\Debug\BlackJack_Client_Colombi.csproj.AssemblyReference.cache
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\obj\Debug\BlackJack_Client_Colombi.csproj.CoreCompileInputs.cache
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\obj\Debug\BlackJack_Client_Colombi.exe
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Client_Colombi\obj\Debug\BlackJack_Client_Colombi.pdb

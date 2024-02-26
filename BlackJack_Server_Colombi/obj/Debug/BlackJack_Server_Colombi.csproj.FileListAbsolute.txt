@@ -1,8 +1,7 @@
-C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\bin\Debug\BlackJack_Server_Colombi.exe.config
-C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\bin\Debug\BlackJack_Server_Colombi.exe
-C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\bin\Debug\BlackJack_Server_Colombi.pdb
-C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\obj\Debug\BlackJack_Server_Colombi.csproj.AssemblyReference.cache
-C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\obj\Debug\BlackJack_Server_Colombi.csproj.SuggestedBindingRedirects.cache
-C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\obj\Debug\BlackJack_Server_Colombi.csproj.CoreCompileInputs.cache
-C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\obj\Debug\BlackJack_Server_Colombi.exe
-C:\Users\aless\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\obj\Debug\BlackJack_Server_Colombi.pdb
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\bin\Debug\BlackJack_Server_Colombi.exe.config
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\bin\Debug\BlackJack_Server_Colombi.exe
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\bin\Debug\BlackJack_Server_Colombi.pdb
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\obj\Debug\BlackJack_Server_Colombi.csproj.AssemblyReference.cache
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\obj\Debug\BlackJack_Server_Colombi.csproj.CoreCompileInputs.cache
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\obj\Debug\BlackJack_Server_Colombi.exe
+C:\Users\aless\OneDrive\Desktop\BlackJack_Socket_Colombi\BlackJack_Server_Colombi\obj\Debug\BlackJack_Server_Colombi.pdb
