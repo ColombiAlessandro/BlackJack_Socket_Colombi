@@ -67,7 +67,13 @@ namespace BlackJack_Client_Colombi
                         int punteggio = 0;
                         do
                         {
-
+                            if (stringa_ricevuta == "HP") break;
+                            if (punteggio > 21)
+                            {
+                                stringa_ricevuta = "HP";
+                                break;
+                            }
+                            
                             Console.WriteLine($"Il tuo punteggio attuale è:{punteggio}");
                             Console.WriteLine("Vuoi pescare un'altra carta?[Y/N]");
                             scelta = Console.ReadLine();
@@ -77,8 +83,10 @@ namespace BlackJack_Client_Colombi
                                 stream.Write(bytes_da_inviare, 0, bytes_da_inviare.Length);
                                 numero_bytes = stream.Read(bytes, 0, cliente.ReceiveBufferSize);
                                 stringa_ricevuta = Encoding.ASCII.GetString(bytes, 0, numero_bytes);
+                                Console.WriteLine(stringa_ricevuta);
                                 if (stringa_ricevuta != "HP")
                                 {
+                                    Console.Clear();
                                     Console.WriteLine($"La carta estratta è {stringa_ricevuta}");
                                     punteggio += int.Parse(stringa_ricevuta.Substring(0, 2));
                                 }
@@ -88,16 +96,27 @@ namespace BlackJack_Client_Colombi
                                     return;
                                 }
                             }
-                        } while (scelta != "N" || scelta != "n");
-                        Console.WriteLine("Ora tocca al banco");
-                        Byte[] bytes_da_inviare1 = Encoding.ASCII.GetBytes("H" + "\n");
-                        stream.Write(bytes_da_inviare1, 0, bytes_da_inviare1.Length);
-                        do
+                        } while (scelta != "N" && scelta != "n");
+                        if (stringa_ricevuta != "HP")
                         {
-                            numero_bytes = stream.Read(bytes, 0, cliente.ReceiveBufferSize);
-                            stringa_ricevuta = Encoding.ASCII.GetString(bytes, 0, numero_bytes);
-                            Console.WriteLine(stringa_ricevuta);
-                        } while (stringa_ricevuta != "HV" || stringa_ricevuta != "HP");
+                            Console.WriteLine("Ora tocca al banco");
+                            Byte[] bytes_da_inviare1 = Encoding.ASCII.GetBytes("H" + "\n");
+                            stream.Write(bytes_da_inviare1, 0, bytes_da_inviare1.Length);
+                            int punteggioBanco = 0;
+                            do
+                            {
+                                numero_bytes = stream.Read(bytes, 0, cliente.ReceiveBufferSize);
+                                stringa_ricevuta = Encoding.ASCII.GetString(bytes, 0, numero_bytes);
+                                if (stringa_ricevuta != "HP" && stringa_ricevuta != "HV")
+                                {
+                                    Console.WriteLine($"Il banco ha estratto: {stringa_ricevuta}");
+                                    punteggioBanco += int.Parse(stringa_ricevuta.Substring(0, 2));
+                                    Console.WriteLine($"Punteggio: {punteggioBanco}");
+                                }
+                            } while (stringa_ricevuta != "HV" && stringa_ricevuta != "HP");
+                        }
+                        if (stringa_ricevuta == "HV") Console.WriteLine("Hai vinto!");
+                        else Console.WriteLine("Hai perso");
                     }
                     cliente.Close();
                 }

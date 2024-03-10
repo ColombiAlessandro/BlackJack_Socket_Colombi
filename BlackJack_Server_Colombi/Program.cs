@@ -74,7 +74,12 @@ namespace BlackJack_Server_Colombi
                                 string carta = Mazzo.EstraiCarta();
                                 risposta = carta;
                                 punteggio += int.Parse(carta.Substring(0, 2));
-                                if (punteggio > 21) risposta = "HP";
+                                if (punteggio > 21)
+                                {
+                                    sendBytes = Encoding.ASCII.GetBytes(risposta);
+                                    networkStream.Write(sendBytes, 0, sendBytes.Length);
+                                    risposta = "HP";
+                                }
 
                             }
                             if (dati_client == "H")
@@ -83,17 +88,22 @@ namespace BlackJack_Server_Colombi
                                 do
                                 {
                                     string carta = Mazzo.EstraiCarta();
+                                    Console.WriteLine(carta);
                                     risposta = carta;
                                     sendBytes = Encoding.ASCII.GetBytes(risposta);
                                     networkStream.Write(sendBytes, 0, sendBytes.Length);
                                     punteggio2 += int.Parse(carta.Substring(0, 2));
-                                    if (punteggio2 > 21) risposta = "HV";
+                                    if (punteggio2 > 21)
+                                    {
+                                        risposta = "HV";
+                                    }
                                 } while (punteggio2 < 15);
                                 if (punteggio > punteggio2) risposta = "HV"; else risposta = "HP";
                             }
                             //risposta = elaborazioneDati(dati_client);
                             sendBytes = Encoding.ASCII.GetBytes(risposta);
                             networkStream.Write(sendBytes, 0, sendBytes.Length);
+                            networkStream.Flush();
                             Console.WriteLine("Inviato: " + risposta + "\n");
 
                         }
@@ -109,6 +119,8 @@ namespace BlackJack_Server_Colombi
                 }
                 catch (Exception eccezione)
                 {
+                    punteggio = 0;
+                    Mazzo.CreaMazzo();
                     Console.WriteLine(eccezione.ToString());
                 }
             }
@@ -153,6 +165,7 @@ namespace BlackJack_Server_Colombi
                     nCarta = 1;
                     contSeme++;
                 }
+                Console.WriteLine (carta);
                 mazzo.Add(carta);
             }
         }
